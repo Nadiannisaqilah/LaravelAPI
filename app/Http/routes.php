@@ -38,5 +38,9 @@ Route::get('master/country', 'HomeController@view_Country');
 
 Route::get('cronGetCountry', 'HomeController@get_Country');
 
+Route::get('master/airport', 'HomeController@view_Airport');
+
+Route::get('cronGetAirport', 'HomeController@get_Airport');
+
 
 

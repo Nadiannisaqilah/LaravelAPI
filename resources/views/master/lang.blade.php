@@ -1,6 +1,3 @@
-@extends('app')
-
-@section('content')
 <h4>Language</h4>
 <table>
 	<thead>s
@@ -20,4 +17,3 @@
 		@endforeach
 	</tbody>
 </table>
-@endsection
