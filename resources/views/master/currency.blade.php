@@ -1,3 +1,6 @@
+@extends('app')
+
+@section('content')
 <h4>Currency</h4>
 <table>
 	<thead>
@@ -14,4 +17,5 @@
 		</tr>
 		@endforeach
 	</tbody>
-</table>]
+</table>
+@endsection

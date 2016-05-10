@@ -1,3 +1,6 @@
+@extends('app')
+
+@section('content')
 <h4>Country</h4>
 <table>
 	<thead>
@@ -17,3 +20,5 @@
 		@endforeach
 	</tbody>
 </table>
+
+@endsection

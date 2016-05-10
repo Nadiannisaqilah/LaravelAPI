@@ -1,45 +1,29 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Laravel</title>
+@extends('app')
 
-        <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
-
-        <style>
-            html, body {
-                height: 100%;
-            }
-
-            body {
-                margin: 0;
-                padding: 0;
-                width: 100%;
-                display: table;
-                font-weight: 100;
-                font-family: 'Lato';
-            }
-
-            .container {
-                text-align: center;
-                display: table-cell;
-                vertical-align: middle;
-            }
-
-            .content {
-                text-align: center;
-                display: inline-block;
-            }
-
-            .title {
-                font-size: 96px;
-            }
-        </style>
-    </head>
-    <body>
+@section('content')
+<link href='//fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
         <div class="container">
             <div class="content">
-                <div class="title">Laravel 5</div>
+                <div class="title">API</div>
+                <div class="desc">Application Programming Interface is best thought of as a contract provided by one piece of computer software to another</div>
             </div>
         </div>
-    </body>
-</html>
+<style type="text/css">
+.content{
+	margin-top: 30%;
+}
+.title{
+	font-family:"Arial";
+	color: #ee6e73;
+	font-size: 20pt;
+	text-align: center;
+}	
+.desc{
+	font-family:"Arial";
+	color: #ee6e73;
+	font-size: 15pt;
+	text-align: center;
+}
+</style>
+
+@endsection
