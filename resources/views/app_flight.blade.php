@@ -18,11 +18,10 @@
           <div class="nav-wrapper">
             <a href="{{ url('/') }}" class="brand-logo center"> API Laravel </a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="{{ url('master/currency') }}">Currency</a></li>
-              <li><a href="{{ url('master/country') }}">Country</a></li>
-              <li><a href="{{ url('master/lang') }}">Language</a></li>
-              <li><a href="{{ url('master/airport') }}">Airport</a></li>
-              
+              <li><a href="{{ url('master/currency') }}"> Currency </a></li>
+              <li><a href="{{ url('master/country') }}"> Country </a></li>
+              <li><a href="{{ url('master/lang') }}"> Language </a></li>
+              <li><a href="{{ url('master/airport') }}"> Airport </a></li>
             </ul>
           </div>
         </nav>
