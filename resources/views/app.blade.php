@@ -12,7 +12,21 @@
     </head>
 
     <body>
-  
+<!-- <ul id="dropdown1" class="dropdown-content">
+  <li><a href="{{ url('master/currency') }}"> Currency </a></li>
+  <li><a href="{{ url('master/country') }}"> Country </a></li>
+  <li><a href="{{ url('master/lang') }}"> Language </a></li>
+  <li><a href="{{ url('master/airport') }}"> Airport </a></li>
+</ul>
+<nav>
+  <div class="nav-wrapper">
+    <a href="{{ url('/') }}" class="brand-logo center"> API Laravel Project </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Master<i class="material-icons right">dns</i></a></li>
+      <li><a href="{{ url('reservasi/flight') }}">Flight</a></li>
+    </ul>
+  </div>
+</nav> -->
         <nav>
           <div class="nav-wrapper">
             <a href="{{ url('/') }}" class="brand-logo center"> API Laravel Project </a>
@@ -21,11 +35,9 @@
               <li><a href="{{ url('master/country') }}">Country</a></li>
               <li><a href="{{ url('master/lang') }}">Language</a></li>
               <li><a href="{{ url('master/airport') }}">Airport</a></li>
-              
             </ul>
           </div>
         </nav>
-                
       <div class="container">
     @yield('content')
     </div>
@@ -37,3 +49,7 @@
 
     </body>
   </html>
+<script type="text/javascript">
+$( document ).ready(function)
+$(".dropdown-button").dropdown();
+</script>

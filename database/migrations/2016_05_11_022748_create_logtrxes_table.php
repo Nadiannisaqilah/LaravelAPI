@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateLogsTable extends Migration
+class CreateLogtrxesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,8 +12,12 @@ class CreateLogsTable extends Migration
      */
     public function up()
     {
-        Schema::create('logs', function (Blueprint $table) {
+        Schema::create('logtrxes', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('request');
+            $table->string('response');
+            $table->string('status_code');
+            $table->string('token');
             $table->timestamps();
         });
     }
@@ -25,6 +29,6 @@ class CreateLogsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('logs');
+        Schema::drop('logtrxes');
     }
 }

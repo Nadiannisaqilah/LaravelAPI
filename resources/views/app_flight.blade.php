@@ -1,12 +1,12 @@
 <!DOCTYPE html>
   <html>
     <head>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
       <!--Import Google Icon Font-->
       <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
       <link href="{{ url('http://fonts.googleapis.com/icon?family=Material+Icons') }}" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="{{ url('css/materialize.min.css') }} "  media="screen,projection"/>
-      <script type="text/javascript" src="{{ url('js/materialize.min.js') }}"></script>
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -32,15 +32,23 @@
 
     
       <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="{{ url('https://code.jquery.com/jquery-2.1.1.min.js') }}">
+      <script type="text/javascript" src="{{ url('js/jquery.min.js') }}">
         
       </script>
       
       <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+      <script type="text/javascript" src="{{ url('js/materialize.min.js') }}"></script>
   
   
 
       @yield('footer')
 
+<script type="text/javascript">
+  $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        }
+});
+</script>
     </body>
   </html>
