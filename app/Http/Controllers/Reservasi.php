@@ -53,7 +53,7 @@ class Reservasi extends Controller
     	$sd->save();
 
     	$hasil = $newapi->getCurl('search/flight',$data);
-    	echo "<pre>".print_r(($hasil),1)."</pre>";
+    	echo json_encode($hasil);
 
     	$sd->result = json_encode($hasil);
     	$sd->save();
